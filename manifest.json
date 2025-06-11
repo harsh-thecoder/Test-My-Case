@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "New Codeforces Test Case Runner",
+  "name": "Test My Case",
   "version": "1.0",
   "description": "Run custom test cases on accepted Codeforces solutions",
   "permissions": [
