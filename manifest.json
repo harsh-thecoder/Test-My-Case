@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "New Codeforces Test Case Runner",
+  "version": "1.0",
+  "description": "Run custom test cases on accepted Codeforces solutions",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+      "https://codeforces.com/*",
+      "https://*.codeforces.com/*",
+      "https://judge0-ce.p.rapidapi.com/*",
+      "https://generativelanguage.googleapis.com/*",
+      "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_icon": "image.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://codeforces.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+  {
+    "resources": ["content_script_fetch_code.js"],
+    "matches": ["https://codeforces.com/*"]
+  }
+  ]
+}
