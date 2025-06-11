@@ -45,6 +45,8 @@ CRITICAL JUDGE0 COMPATIBILITY ISSUES TO FIX
 Error: Judge0 error 400: {"error":"some attributes for this submission cannot be converted to UTF-8, use base64_encoded=true query parameter"}
 This issue must not be there for code provided you take care of that
 
+Make it crystal and clear for Judge0 format
+
 FOR C++:
 - Replace non-standard headers:
   #include <bits/stdc++.h> → individual standard headers
@@ -93,6 +95,8 @@ FOR JAVASCRIPT:
 Also make sure error like this does not come : "Error: Judge0 error 400: {"error":"some attributes for this submission cannot be converted to UTF-8, use base64_encoded=true query parameter"}"
 As I will be sending the final code to Judge0 so it should be judge0 friendly.
 Also you can go for converting it to simpler code keeping the logic exact same.
+
+Important Note : You can convert the code in simpler format as per you without changing the logic
 
 Now convert the following code to be 100% Judge0 compatible:
 

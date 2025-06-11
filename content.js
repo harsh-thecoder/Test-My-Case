@@ -129,7 +129,8 @@ async function callServerForCleaning(code, lang) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ sourceCode: code, language: lang })
     });
-    const data = await res.json();
+    const data = await res.json(); 
+    // console.log('Cleaned Code : ',data.cleanCode);
     return data.cleanCode;
 }
 
